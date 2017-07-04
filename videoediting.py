@@ -83,16 +83,6 @@ def main():
     cv2.destroyWindow('view')
     cap.release()
 
-    # Keep this process running until Enter is pressed
-    print "Press Enter to quit..."
-    try:
-        sys.stdin.readline()
-    except KeyboardInterrupt:
-        pass
-    finally:
-        # Remove the sample listener when done
-        #controller.remove_listener(listener)
-        pass
 
 if __name__ == "__main__":
     main()
