@@ -51,7 +51,7 @@ def mouseeventproc(event, x, y, flags, param):
         width_1 = int((x - ix) * fx)
         cv2.arrowedLine(output, (ix_1, iy_1 + y), (0, h), (0,0,255), 2)
         cv2.arrowedLine(output, (ix_1 + width_1, iy_1 + y), (w, h), (0,0,255), 2)
-        cv2.imwrite("callout_"+timestr+".png", output)
+        cv2.imwrite(timestr+"_callout"+".png", output)
 
         """cropped = Image.open(timestr+".png")
         crop_w, crop_h = cropped.size
